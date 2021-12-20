@@ -8,21 +8,23 @@ class ClipBoard extends React.Component {
       value: '',
       copied: false,
     };
-    this.Input = React.createRef();
+    this.TextArea = React.createRef();
   }
 
   componentDidMount = () => {
-    this.Input.current.focus();
+    this.TextArea.current.focus();
   }
 
   render() {
     return (
       <div className='ui segment' style={{textAlign: 'center'}}>
-        <div className='ui input'>
-        <input
+        <div className='ui text'>
+        <textarea
         value={this.state.value}
         onChange={({target: {value}}) => this.setState({value, copied: false})}
-        ref={this.Input}
+        ref={this.TextArea}
+        rows="10"
+        cols="50"
         />
         </div>
 
@@ -30,7 +32,7 @@ class ClipBoard extends React.Component {
           onCopy={() => this.setState({copied: true})}>
           <button className='ui button'>Copy to clipboard</button>
         </CopyToClipboard>
-
+        <br />
         {this.state.copied ? <span style={{color: 'red'}}>Copied!</span> : null}
       </div>
     );
