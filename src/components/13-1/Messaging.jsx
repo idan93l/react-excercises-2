@@ -14,14 +14,6 @@ class Messaging extends React.Component {
     });
   };
 
-  // getOldPeople = (data) => {
-  //   return data.filter((element, index) => {
-  //     if (+element.birthday.slice(-4) <= 1990) {
-  //       return <h1 key={index}>{element}</h1>;
-  //     }
-  //   });
-  // };
-
   getOldPeople = (data) => {
     const filteredArray = data.filter((element) => {
       return +element.birthday.slice(-4) <= 1990;
@@ -36,8 +28,6 @@ class Messaging extends React.Component {
   };
 
   render = () => {
-    console.log(this.state.filteredData);
-    console.log(this.state.filteredData[1]);
     return (
       <div>
         <h1>filterde names:</h1>
