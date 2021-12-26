@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const TimeInput = ({ name, handleChange, inputValue }) => {
   return (
     <div>
