@@ -7,8 +7,8 @@ export default function StarWarsApi() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("https://swapi.dev/api/films/1/");
-        setData(response.data);
+        const {data} = await axios.get("https://swapi.dev/api/films/1/");
+        setData(data);
       } catch (error) {
         console.log(`It's a trap!`);
       }
