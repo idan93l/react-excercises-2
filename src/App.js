@@ -7,6 +7,7 @@ import Messaging from "./components/13-1/Messaging.jsx";
 import Main from "./components/18-1/Main.jsx";
 import ToDoApp from "./components/18-2/ToDoApp.js";
 import TimeApp from "./components/18-3/TimeApp.js";
+import CheckBox from "./components/18-4/CheckBox.js";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Messaging /> */}
       {/* <Main /> */}
       {/* <ToDoApp /> */}
-      <TimeApp />
+      {/* <TimeApp /> */}
+      <CheckBox />
     </div>
   );
 }
