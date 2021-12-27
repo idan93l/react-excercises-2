@@ -9,6 +9,7 @@ import ToDoApp from "./components/18-2/ToDoApp.js";
 import TimeApp from "./components/18-3/TimeApp.js";
 import CheckBox from "./components/18-4/CheckBox.js";
 import StarWarsApi from "./components/19-1/StarWarsApi.jsx";
+import Countries from "./components/19-2/Countries.js";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <ToDoApp /> */}
       {/* <TimeApp /> */}
       {/* <CheckBox /> */}
-      <StarWarsApi />
+      {/* <StarWarsApi /> */}
+      <Countries />
     </div>
   );
 }
