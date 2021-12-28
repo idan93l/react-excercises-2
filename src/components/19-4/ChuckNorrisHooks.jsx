@@ -14,6 +14,7 @@ export default function Chuck() {
           `https://api.chucknorris.io/jokes/categories`
         );
         setCategries(data);
+        console.log(data);
       } catch (error) {
         console.log(`It's a trap!`);
       }
@@ -21,7 +22,7 @@ export default function Chuck() {
     if (categories) {
       getData();
     }
-  }, []);
+  }, [categories]);
 
   useEffect(() => {
     const getJokesByCategory = async () => {

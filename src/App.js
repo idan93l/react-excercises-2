@@ -12,6 +12,7 @@ import StarWarsApi from "./components/19-1/StarWarsApi.jsx";
 import Countries from "./components/19-2/Countries.js";
 import Algolia from "./components/19-3/Algolia.js";
 import Chuck from "./components/19-4/ChuckNorrisHooks.jsx";
+import ToggleApi from "./components/20-1/ToggleApi.jsx";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <StarWarsApi /> */}
       {/* <Countries /> */}
       {/* <Algolia /> */}
-      <Chuck />
+      {/* <Chuck /> */}
+      <ToggleApi />
     </div>
   );
 }
