@@ -21,12 +21,12 @@ class ChuckNorris extends React.Component {
     const response = await axios.get(
       "https://api.chucknorris.io/jokes/categories"
     );
-    // this.setState({ categories: response.data });
+    this.setState({ categories: response.data });
     this.setState({ searchCategories: response.data });
   };
 
   getJokeByCategory = async () => {
-    // this.changeValue();
+    this.changeValue();
     const response = await axios.get(
       `https://api.chucknorris.io/jokes/random?category=${this.state.singleCategory}`
     );
@@ -36,7 +36,7 @@ class ChuckNorris extends React.Component {
 
   changeValue = (e) => {
     this.setState({ singleCategory: e.target.value });
-    // this.getJokeByCategory();
+    this.getJokeByCategory();
   };
 
   emptyValue = () => {
@@ -55,14 +55,14 @@ class ChuckNorris extends React.Component {
       <div>
         <Button button="Get a Chuck Norris Joke" invoker={this.getJoke} />
 
-        {/* <TextBox text={this.state.joke} /> */}
+        <TextBox text={this.state.joke} />
 
         <SearchBar
           // invoker={this.getJokeCategories}
           categories={this.state.searchCategories}
           // searchBarValue={this.getJokeByCategory}
           searchBarValue={this.changeValue}
-          // emptyValue={this.emptyValue}
+          emptyValue={this.emptyValue}
         />
 
         <Button
@@ -73,7 +73,7 @@ class ChuckNorris extends React.Component {
 
         <Button
           button="Get jokes categories"
-          // invoker={this.getJokeCategories}
+          invoker={this.getJokeCategories}
         />
 
         <TextBox categories={this.state.categories} />

@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
           placeholder="Search Joke..."
           list="jokes"
           onChange={searchBarValue}
-          // onClick={emptyValue}
+          onClick={emptyValue}
           />
           <datalist id="jokes">
           {categories && categories.map(category => {

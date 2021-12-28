@@ -11,6 +11,7 @@ import CheckBox from "./components/18-4/CheckBox.js";
 import StarWarsApi from "./components/19-1/StarWarsApi.jsx";
 import Countries from "./components/19-2/Countries.js";
 import Algolia from "./components/19-3/Algolia.js";
+import Chuck from "./components/19-4/ChuckNorrisHooks.jsx";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <CheckBox /> */}
       {/* <StarWarsApi /> */}
       {/* <Countries /> */}
-      <Algolia />
+      {/* <Algolia /> */}
+      <Chuck />
     </div>
   );
 }
