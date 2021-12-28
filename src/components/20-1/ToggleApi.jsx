@@ -8,16 +8,17 @@ export default function ToggleApi() {
     toggle ? setToggle(false) : setToggle(true)
   }
   
-  const showData = () => {
-    if (toggle) {
-      return <Fetching />
-    }
-  }
+  // const showData = () => {
+  //   if (toggle) {
+  //     return <Fetching />
+  //   }
+  // }
 
   return (
     <div>
       <button onClick={changeToggle}>Toggle!</button>
-      {showData()}
+      {/* {showData()} */}
+      {toggle && <Fetching />}
     </div>
   );
 }

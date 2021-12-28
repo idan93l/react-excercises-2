@@ -13,6 +13,7 @@ import Countries from "./components/19-2/Countries.js";
 import Algolia from "./components/19-3/Algolia.js";
 import Chuck from "./components/19-4/ChuckNorrisHooks.jsx";
 import ToggleApi from "./components/20-1/ToggleApi.jsx";
+import SimpleEdit from "./components/20-2/SimpleEdit.jsx";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <Countries /> */}
       {/* <Algolia /> */}
       {/* <Chuck /> */}
-      <ToggleApi />
+      {/* <ToggleApi /> */}
+      <SimpleEdit />
     </div>
   );
 }
