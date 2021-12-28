@@ -14,6 +14,7 @@ import Algolia from "./components/19-3/Algolia.js";
 import Chuck from "./components/19-4/ChuckNorrisHooks.jsx";
 import ToggleApi from "./components/20-1/ToggleApi.jsx";
 import SimpleEdit from "./components/20-2/SimpleEdit.jsx";
+import Video from "./components/20-3/Video.jsx";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <Algolia /> */}
       {/* <Chuck /> */}
       {/* <ToggleApi /> */}
-      <SimpleEdit />
+      {/* <SimpleEdit /> */}
+      <Video />
     </div>
   );
 }
