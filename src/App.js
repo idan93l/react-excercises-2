@@ -15,6 +15,7 @@ import Chuck from "./components/19-4/ChuckNorrisHooks.jsx";
 import ToggleApi from "./components/20-1/ToggleApi.jsx";
 import SimpleEdit from "./components/21-1/SimpleEdit.jsx";
 import Video from "./components/21-2/Video.jsx";
+import ImageToggle from "./components/21-3/ImageToggle.jsx";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
       {/* <Chuck /> */}
       {/* <ToggleApi /> */}
       {/* <SimpleEdit /> */}
-      <Video />
+      {/* <Video /> */}
+      <ImageToggle />
     </div>
   );
 }
