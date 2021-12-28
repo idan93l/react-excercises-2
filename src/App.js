@@ -10,6 +10,7 @@ import TimeApp from "./components/18-3/TimeApp.js";
 import CheckBox from "./components/18-4/CheckBox.js";
 import StarWarsApi from "./components/19-1/StarWarsApi.jsx";
 import Countries from "./components/19-2/Countries.js";
+import Algolia from "./components/19-3/Algolia.js";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <TimeApp /> */}
       {/* <CheckBox /> */}
       {/* <StarWarsApi /> */}
-      <Countries />
+      {/* <Countries /> */}
+      <Algolia />
     </div>
   );
 }
